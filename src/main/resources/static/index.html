@@ -12,20 +12,90 @@
 	integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
 	crossorigin="anonymous">
 
-<title>Project</title>
 </head>
 <body>
-	<h1>Stock Analysis</h1>
 
-	<div class="alert alert-primary" role="alert">Your Max profit !</div>
+	<div class="container">
 
-	<nav class="navbar navbar-light bg-light">
-		<form class="form-inline">
-			<input class="form-control mr-sm-2" type="search"
-				placeholder="Search" aria-label="Search">
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		</form>
-	</nav>
+		<ul class="nav">
+			<li class="nav-item"><a class="nav-link" href="/index.html">메인화면</a>
+			</li>
+			<li class="nav-item"><a class="nav-link" href="/login.html">로그인</a>
+			</li>
+			<li class="nav-item"><a class="nav-link" href="/form.html">회원가입</a>
+			</li>
+			<li class="nav-item"><a class="nav-link" href="/list">사용자 목록</a></li>
+			</li>
+		</ul>
+
+		<br> <br>
+		<h1>Stock Analysis</h1>
+
+		<div class="alert alert-primary" role="alert">You can check
+			MaxProfit!!</div>
+
+		<nav class="navbar navbar-light bg-light">
+			<form action="/search" method="get" class="form-inline">
+				<input class="form-control mr-sm-2" type="search"
+					placeholder="Search" aria-label="Search" name="subject">
+				<button class="btn btn-primary" id="hw" type="submit">Search</button>
+			</form>
+		</nav>
+
+		<br> <br> <br> <br> <br> <br> <br>
+		<br>
+		<hr>
+
+
+		<footer class="container py-5">
+			<div class="row">
+				<div class="col-12 col-md">
+
+					<small class="d-block mb-3 text-muted">&copy; 2017-2019</small>
+				</div>
+				<div class="col-6 col-md">
+					<h5>Features</h5>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="#">Cool stuff</a></li>
+						<li><a class="text-muted" href="#">Random feature</a></li>
+						<li><a class="text-muted" href="#">Team feature</a></li>
+						<li><a class="text-muted" href="#">Stuff for developers</a></li>
+						<li><a class="text-muted" href="#">Another one</a></li>
+						<li><a class="text-muted" href="#">Last time</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-md">
+					<h5>Resources</h5>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="#">Resource</a></li>
+						<li><a class="text-muted" href="#">Resource name</a></li>
+						<li><a class="text-muted" href="#">Another resource</a></li>
+						<li><a class="text-muted" href="#">Final resource</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-md">
+					<h5>Resources</h5>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="#">Business</a></li>
+						<li><a class="text-muted" href="#">Education</a></li>
+						<li><a class="text-muted" href="#">Government</a></li>
+						<li><a class="text-muted" href="#">Gaming</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-md">
+					<h5>About</h5>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="#">Team</a></li>
+						<li><a class="text-muted" href="#">Locations</a></li>
+						<li><a class="text-muted" href="#">Privacy</a></li>
+						<li><a class="text-muted" href="#">Terms</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
 
 
 	<!-- Optional JavaScript -->
