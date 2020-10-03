@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+	integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+	crossorigin="anonymous">
+
+</head>
+<body>
+
+
+
+	<div class="container">
+
+		{{> /include/navigation}}
+
+		<h1>Stock Analysis</h1>
+
+		<div class="alert alert-primary" role="alert">You can check
+			MaxProfit!!</div>
+
+		<nav class="navbar navbar-light bg-light">
+			<form action="/search" method="get" class="form-inline">
+				<input class="form-control mr-sm-2" type="search"
+					placeholder="Search" aria-label="Search" name="subject">
+				<button class="btn btn-primary" id="hw" type="submit">Search</button>
+			</form>
+		</nav>
+
+
+
+		<div class="form-row">
+			<h2>
+				Your Stock Code is
+				<h2 style="color: red">&nbsp&nbsp{{subject}}</h2>
+			</h2>
+
+			<p id="result" style="display: none">{{max_profit}}</p>
+
+		</div>
+
+		<div class="form-row">
+
+			<h3>
+				Your best profit for the last 180 days is
+				<h3 style="color: red">&nbsp&nbsp{{max_profit}}&nbsp dollars
+					.</h3>
+			</h3>
+
+		</div>
+
+		{{> /include/footer}}
+
+	</div>
+
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+
+
+	<script type="text/javascript">
+		var hw = document.getElementById('hw');
+		hw.addEventListener('click', function() {
+			alert('Searching,,,');
+		})
+
+		var temp = $('#result').html();
+
+		if (temp == -1) {
+			alert("This is a incorrect stock code.");
+		} else {
+			alert("This is a correct stock code.");
+		}
+	</script>
+
+</body>
+</html>
